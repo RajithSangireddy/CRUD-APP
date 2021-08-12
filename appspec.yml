@@ -18,7 +18,7 @@ hooks:
   ApplicationStart:
     - location: deploy_scripts/run.sh
       timeout: 180
-      runas: ec2-user
+      runas: root
   ValidateService:
     - location: deploy_scripts/validate.sh
       timeout: 60
